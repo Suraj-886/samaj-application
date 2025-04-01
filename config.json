@@ -1,0 +1,63 @@
+{
+  "db": {
+    "localurl": "mongodb://localhost:27017/samaj-backend",
+    "url": "mongodb://localhost:27017/samaj-backend"
+  },
+  "secret": "suhaviAudioBooks",
+  "aws": {
+    "bucketName": "samaj-app",
+    "accessKeyId": "AKIAZGBWVPOASAOYEWNV",
+    "secretAccessKey": "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"
+  },
+  "snsKeys": {
+    "accessKeyId": "AKIAZGBWVPOASAOYEWNV",
+    "secretAccessKey": "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"
+  },
+  "sesKeys": {
+    "accessKeyId": "AKIAZGBWVPOASAOYEWNV",
+    "secretAccessKey": "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"
+  },
+  "twilio": {
+    "twilioAccountSid": "AC45b6d5b707bced7dff06ff66114a1068",
+    "twilioAuthToken": "4b52041ff21b6e903256757d3eb4aeca"
+  },
+  "google": {
+    "clientID": "  ",
+    "clientSecret": "  ",
+    "callbackURL": "  "
+  },
+  "signupNotification": {
+    "text": "Thank you for submitting your details. Our experts are validating your sign up details we will notify you when your account is active -Pareek samaj",
+    "senderID": "PSGHTS",
+    "templateId": "1007016487849002760"
+  },
+  "loginCredentials": {
+    "userID": "pavanvyaspareek@gmail.com",
+    "password": "Pavan@vyas123"
+  },
+  "verifiedNotification": {
+    "text": "Congratulations! Your account details have been verified Please login into Pareek samaj App to enjoy amazing services",
+    "senderID": "PSGHTS",
+    "templateId": "1007757185609678786"
+  },
+  "notVerifiedNotification": {
+    "text": "Your details have been rejected, as they haven't met the standard practices.\r\nYou can sign up again with valid details to use the Pareek samaj App",
+    "senderID": "PSGHTS",
+    "templateId": "1007815255468198097"
+  },
+  "otpNotification": {
+    "text": "is the OTP For Logging into your Pareek samaj account.\r\nKeep the OTP safe. We will never call to ask for your OTP.",
+    "senderID": "PSGHTS",
+    "templateId": "1007721507947005142"
+  },
+  "forgetPasswordNotification": {
+    "text": "is the OTP to reset passowrd for Pareek samaj account.\r\nKeep the OTP safe. We will never call to ask for your OTP.",
+    "senderID": "PSGHTS",
+    "templateId": "1007721507947005142"
+  },
+  "smscredentials": {
+    "username": " ",
+    "password": " ",
+    "from": "Pareek Samaj Otp Verification"
+  }
+}
