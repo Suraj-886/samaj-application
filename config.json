@@ -1,7 +1,7 @@
 {
   "db": {
     "localurl": "mongodb+srv://developersanju10:suraj123@cluster0.cscaglf.mongodb.net/",
-    "url": "mongodb://localhost:27017/samaj-backend"
+    "url": "mongodb+srv://developersanju10:suraj123@cluster0.cscaglf.mongodb.net/"
   },
   "secret": "suhaviAudioBooks",
   "aws": {
