@@ -42,11 +42,14 @@ mongoose.Promise = global.Promise;
 const dBUrl = config.db.localurl;
 mongoose.connect(
   dBUrl,
-  // {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true,
-  //   useCreateIndex: true,
-  // },
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000
+    //   useNewUrlParser: true,
+    //   useUnifiedTopology: true,
+    //   useCreateIndex: true,
+  },
   (err) => {
     if (err) {
       console.log("DB Not Connected", err);
