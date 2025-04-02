@@ -40,16 +40,16 @@ const error = require("./middlewares/error");
 // Set up mongoose connection
 mongoose.Promise = global.Promise;
 const dBUrl = config.db.localurl;
-mongoose.connect(
-  dBUrl,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 30000
-    //   useNewUrlParser: true,
-    //   useUnifiedTopology: true,
-    //   useCreateIndex: true,
-  },
+mongoose.connect(dBUrl, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 30000, // Increase timeout
+  socketTimeoutMS: 45000, // Increase socket timeout
+  connectTimeoutMS: 30000
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true,
+  //   useCreateIndex: true,
+},
   (err) => {
     if (err) {
       console.log("DB Not Connected", err);
